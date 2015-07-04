@@ -7,4 +7,4 @@ Part of [Java Delight](https://github.com/javadelight/delight-main#java-delight-
 
 Utilities for functional style Java code.
 
-[All Reports](http://modules.appjangle.com/fn-api/latest/project-reports.html)
+[All Reports](http://modules.appjangle.com/delight-functional/latest/project-reports.html)
