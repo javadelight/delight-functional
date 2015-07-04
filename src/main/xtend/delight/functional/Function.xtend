@@ -1,4 +1,4 @@
-package de.mxro.fn
+package delight.functional
 
 /** 
  * <p>A function with a generic input and output.

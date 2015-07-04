@@ -1,4 +1,4 @@
-package de.mxro.fn
+package delight.functional
 
 /** 
  * <p>A simple closure which takes in one generic argument.

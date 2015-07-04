@@ -1,4 +1,4 @@
-package de.mxro.fn.collections
+package delight.functional.collections
 
 import java.util.List
 

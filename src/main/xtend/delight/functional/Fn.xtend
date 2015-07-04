@@ -1,4 +1,4 @@
-package de.mxro.fn
+package delight.functional
 
 class Fn {
 	/** 

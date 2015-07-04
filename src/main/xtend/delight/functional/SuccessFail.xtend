@@ -1,4 +1,4 @@
-package de.mxro.fn
+package delight.functional
 
 abstract class SuccessFail {
 	def abstract boolean isSuccess()
