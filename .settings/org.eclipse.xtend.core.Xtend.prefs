@@ -1,0 +1,13 @@
+//outlet.DEFAULT_OUTPUT.sourceFolder.src/main/java.directory=target/src/main/java
+//outlet.DEFAULT_OUTPUT.sourceFolder.src/main/java.ignore=true
+//outlet.DEFAULT_OUTPUT.sourceFolder.src/main/xtend.directory=src/main/java
+//outlet.DEFAULT_OUTPUT.sourceFolder.src/test/java.directory=target/src/test/java
+//outlet.DEFAULT_OUTPUT.sourceFolder.src/test/java.ignore=true
+BuilderConfiguration.is_project_specific=true
+eclipse.preferences.version=1
+org.eclipse.xtend.core.Xtend.useProjectSettings=true
+outlet.DEFAULT_OUTPUT.hideLocalSyntheticVariables=true
+outlet.DEFAULT_OUTPUT.installDslAsPrimarySource=false
+outlet.DEFAULT_OUTPUT.sourceFolder.java.directory=
+outlet.DEFAULT_OUTPUT.sourceFolder.java.ignore=true
+outlet.DEFAULT_OUTPUT.userOutputPerSourceFolder=true
