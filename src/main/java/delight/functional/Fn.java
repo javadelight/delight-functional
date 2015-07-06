@@ -1,5 +1,8 @@
 package delight.functional;
 
+import delight.functional.Closure;
+import delight.functional.Function;
+import delight.functional.Success;
 import org.eclipse.xtext.xbase.lib.Exceptions;
 
 @SuppressWarnings("all")

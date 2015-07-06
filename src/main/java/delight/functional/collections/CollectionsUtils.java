@@ -3,7 +3,6 @@ package delight.functional.collections;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
-
 import org.eclipse.xtext.xbase.lib.Exceptions;
 
 @SuppressWarnings("all")
