@@ -29,7 +29,7 @@ public abstract class Maybe<V extends Object> {
     return val;
   }
   
-  public static <V extends Object> Maybe<V> is(final V value) {
+  public static <V extends Object> Maybe<V> is(final V outervalue) {
     return new Maybe<V>() {
       @Override
       public boolean is() {
@@ -38,7 +38,7 @@ public abstract class Maybe<V extends Object> {
       
       @Override
       public V value() {
-        return this.value();
+        return outervalue;
       }
     };
   }

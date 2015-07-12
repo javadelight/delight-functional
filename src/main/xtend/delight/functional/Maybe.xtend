@@ -26,14 +26,14 @@ abstract class Maybe<V> {
 		return ^val
 	}
 
-	def static <V> Maybe<V> is(V value) {
+	def static <V> Maybe<V> is(V outervalue) {
 		return new Maybe<V>() {
 			override boolean is() {
 				return true
 			}
 
 			override V value() {
-				return value
+				return outervalue
 			}
 		}
 	}
