@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2011 Max Erik Rohde http://www.mxro.de All rights reserved. -->
+<module >
+	
+	 <entry-point class='delight.functional.internal.DummyEntryPoint'/> 
+	<inherits name='org.eclipse.xtext.xbase.lib.Lib'/>
+	<!-- Specify the paths for translatable code -->
+	<source path=''>
+		<exclude name="**/jre/**" />
+	</source>
+
+</module>
