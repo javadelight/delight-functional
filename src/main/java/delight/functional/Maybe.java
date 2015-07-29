@@ -70,4 +70,14 @@ public abstract class Maybe<V extends Object> {
       }
     };
   }
+  
+  public static <V extends Object> Maybe<V> any(final Maybe... maybes) {
+    for (final Maybe m : maybes) {
+      boolean _is = m.is();
+      if (_is) {
+        return m;
+      }
+    }
+    return Maybe.<V>isNot();
+  }
 }

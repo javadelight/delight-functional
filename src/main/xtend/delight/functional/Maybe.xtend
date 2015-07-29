@@ -61,5 +61,15 @@ abstract class Maybe<V> {
 			}
 		}
 	}
+	
+	def static <V> Maybe<V> any(Maybe... maybes) {
+		for (Maybe m: maybes) {
+			if (m.is) {
+				return m
+			}
+		}
+		
+		return Maybe.isNot()
+	}
 
 }
