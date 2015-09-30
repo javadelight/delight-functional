@@ -26,6 +26,7 @@ abstract class Maybe<V> {
 		return ^val
 	}
 
+	
 	def static <V> Maybe<V> is(V outervalue) {
 		return new Maybe<V>() {
 			override boolean is() {
@@ -34,6 +35,10 @@ abstract class Maybe<V> {
 
 			override V value() {
 				return outervalue
+			}
+			
+			override toString() {
+				return "Maybe.is("+outervalue+")"
 			}
 		}
 	}
@@ -46,6 +51,10 @@ abstract class Maybe<V> {
 
 			override V value() {
 				throw new IllegalStateException("Cannot access value of Maybe if it is not.")
+			}
+			
+			override toString() {
+				return "Maybe.isNot("+clazz+")"
 			}
 		}
 	}

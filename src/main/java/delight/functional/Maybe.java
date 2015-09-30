@@ -40,6 +40,11 @@ public abstract class Maybe<V extends Object> {
       public V value() {
         return outervalue;
       }
+      
+      @Override
+      public String toString() {
+        return (("Maybe.is(" + outervalue) + ")");
+      }
     };
   }
   
@@ -53,6 +58,11 @@ public abstract class Maybe<V extends Object> {
       @Override
       public V value() {
         throw new IllegalStateException("Cannot access value of Maybe if it is not.");
+      }
+      
+      @Override
+      public String toString() {
+        return (("Maybe.isNot(" + clazz) + ")");
       }
     };
   }
