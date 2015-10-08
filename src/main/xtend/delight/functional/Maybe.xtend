@@ -68,6 +68,10 @@ abstract class Maybe<V> {
 			override V value() {
 				throw new IllegalStateException("Cannot access value of Maybe if it is not.")
 			}
+			
+			override toString() {
+				return "Maybe.isNot()"
+			}
 		}
 	}
 	

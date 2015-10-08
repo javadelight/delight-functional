@@ -78,6 +78,11 @@ public abstract class Maybe<V extends Object> {
       public V value() {
         throw new IllegalStateException("Cannot access value of Maybe if it is not.");
       }
+      
+      @Override
+      public String toString() {
+        return "Maybe.isNot()";
+      }
     };
   }
   
