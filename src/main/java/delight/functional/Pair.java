@@ -21,6 +21,12 @@ public class Pair<T1 extends Object, T2 extends Object> {
     return (_hashCode + _hashCode_1);
   }
   
+  @Override
+  public boolean equals(final Object o) {
+    throw new Error("Unresolved compilation problems:"
+      + "\nType mismatch: cannot convert from null to boolean");
+  }
+  
   public Pair(final T1 t1, final T2 t2) {
     this.t1 = t1;
     this.t2 = t2;

@@ -19,6 +19,11 @@ class Pair<T1, T2> {
 		return t1.hashCode+t2.hashCode
 	}
 	
+	@Override
+	def boolean equals(Object o) {
+		
+	}
+	
 	new(T1 t1, T2 t2) {
 		this.t1 = t1;
 		this.t2 = t2;
