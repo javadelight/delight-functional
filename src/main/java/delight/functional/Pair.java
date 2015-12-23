@@ -14,6 +14,13 @@ public class Pair<T1 extends Object, T2 extends Object> {
     return this.t2;
   }
   
+  @Override
+  public int hashCode() {
+    int _hashCode = this.t1.hashCode();
+    int _hashCode_1 = this.t2.hashCode();
+    return (_hashCode + _hashCode_1);
+  }
+  
   public Pair(final T1 t1, final T2 t2) {
     this.t1 = t1;
     this.t2 = t2;
