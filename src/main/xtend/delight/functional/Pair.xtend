@@ -14,13 +14,22 @@ class Pair<T1, T2> {
 		t2
 	}
 	
-	@Override
-	def int hashCode() {
+	override int hashCode() {
 		return t1.hashCode+t2.hashCode
 	}
 	
-	@Override
-	def boolean equals(Object o) {
+	override boolean equals(Object o) {
+		if (o == null) {
+			return false;
+		}
+		
+		if (!(o instanceof Pair)) {
+			return false;
+		}
+		
+		val Pair other = o as Pair;
+		
+		return t1.equals(other.first) && t2.equals(other.second)
 		
 	}
 	
