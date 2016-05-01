@@ -3,7 +3,6 @@ package delight.functional;
 import delight.functional.Closure;
 import delight.functional.Function;
 import delight.functional.Success;
-import org.eclipse.xtext.xbase.lib.Exceptions;
 
 @SuppressWarnings("all")
 public class Fn {
@@ -26,12 +25,8 @@ public class Fn {
     final Closure<Success> _function = new Closure<Success>() {
       @Override
       public void apply(final Success o) {
-        try {
-          if ((!(o != null))) {
-            throw new AssertionError();
-          }
-        } catch (Throwable _e) {
-          throw Exceptions.sneakyThrow(_e);
+        if ((!(o != null))) {
+          throw new AssertionError();
         }
       }
     };

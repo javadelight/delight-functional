@@ -3,7 +3,6 @@ package delight.functional.collections;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
-import org.eclipse.xtext.xbase.lib.Exceptions;
 
 @SuppressWarnings("all")
 public final class CollectionsUtils {
@@ -20,23 +19,19 @@ public final class CollectionsUtils {
   }
   
   public static final <GOutput extends Object> List<GOutput> toOrderedList(final Map<Integer, GOutput> responseMap) {
-    try {
-      int _size = responseMap.size();
-      final List<GOutput> localResponses = new ArrayList<GOutput>(_size);
-      for (int i = 0; (i < responseMap.size()); i++) {
-        {
-          Integer _valueOf = Integer.valueOf(i);
-          final GOutput rr = responseMap.get(_valueOf);
-          if ((!(rr != null))) {
-            throw new AssertionError();
-          }
-          localResponses.add(rr);
+    int _size = responseMap.size();
+    final List<GOutput> localResponses = new ArrayList<GOutput>(_size);
+    for (int i = 0; (i < responseMap.size()); i++) {
+      {
+        Integer _valueOf = Integer.valueOf(i);
+        final GOutput rr = responseMap.get(_valueOf);
+        if ((!(rr != null))) {
+          throw new AssertionError();
         }
+        localResponses.add(rr);
       }
-      return localResponses;
-    } catch (Throwable _e) {
-      throw Exceptions.sneakyThrow(_e);
     }
+    return localResponses;
   }
   
   /**
