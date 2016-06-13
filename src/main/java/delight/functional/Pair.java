@@ -33,17 +33,7 @@ public class Pair<T1 extends Object, T2 extends Object> {
       return false;
     }
     final Pair other = ((Pair) o);
-    boolean _and = false;
-    Object _first = other.first();
-    boolean _equals_1 = this.t1.equals(_first);
-    if (!_equals_1) {
-      _and = false;
-    } else {
-      Object _second = other.second();
-      boolean _equals_2 = this.t2.equals(_second);
-      _and = _equals_2;
-    }
-    return _and;
+    return (this.t1.equals(other.first()) && this.t2.equals(other.second()));
   }
   
   public Pair(final T1 t1, final T2 t2) {
