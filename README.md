@@ -22,11 +22,10 @@ Just add the following dependency to your projects.
 ```
 
 This artifact is available on [Maven Central](https://search.maven.org/#search%7Cga%7C1%7Cdelight-functional) and 
-[BinTray](https://bintray.com/javadelight/javadelight/delight-fileupload).
+[BinTray](https://bintray.com/javadelight/javadelight/delight-functional).
 
 [![Maven Central](https://img.shields.io/maven-central/v/org.javadelight/delight-functional.svg)](https://search.maven.org/#search%7Cga%7C1%7Cdelight-functional)
 
-[![Bintray](https://img.shields.io/bintray/v/javadelight/javadelight/delight-functional.svg)](https://bintray.com/javadelight/javadelight/delight-functional)
 
 ## Usage
 
