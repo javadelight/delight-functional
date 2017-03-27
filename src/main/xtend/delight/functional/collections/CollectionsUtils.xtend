@@ -6,7 +6,7 @@ import java.util.Map
 
 final class CollectionsUtils {
 	def final static <GPOutput> boolean isMapComplete(Map<Integer, GPOutput> map, int size) {
-
+		
 		for (var int i = 0; i < size; i++) {
 			if (map.get(Integer.valueOf(i)) === null) {
 				return false
