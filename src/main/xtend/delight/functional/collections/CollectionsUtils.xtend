@@ -16,13 +16,13 @@ final class CollectionsUtils {
 		return true
 	}
 
-	def final static <GOutput> List<GOutput> toOrderedList(Map<Integer, GOutput> responseMap) {
-		val List<GOutput> localResponses = new ArrayList<GOutput>(responseMap.size())
+	def final static <GOutput> List<GOutput> toOrderedList(Map<Integer, GOutput> map) {
+		val List<GOutput> localResponses = new ArrayList<GOutput>(map.size())
 
-		for (var int i = 0; i < responseMap.size(); i++) {
-			val GOutput rr = responseMap.get(Integer.valueOf(i))
+		for (var int i = 0; i < map.size(); i++) {
+			val GOutput rr = map.get(Integer.valueOf(i))
 			if (!(rr !== null)) {
-				throw new AssertionError()
+				throw new AssertionError("No value for index "+i)
 			}
 			localResponses.add(rr)
 		}

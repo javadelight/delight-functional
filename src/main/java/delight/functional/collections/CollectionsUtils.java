@@ -17,14 +17,14 @@ public final class CollectionsUtils {
     return true;
   }
   
-  public static final <GOutput extends Object> List<GOutput> toOrderedList(final Map<Integer, GOutput> responseMap) {
-    int _size = responseMap.size();
+  public static final <GOutput extends Object> List<GOutput> toOrderedList(final Map<Integer, GOutput> map) {
+    int _size = map.size();
     final List<GOutput> localResponses = new ArrayList<GOutput>(_size);
-    for (int i = 0; (i < responseMap.size()); i++) {
+    for (int i = 0; (i < map.size()); i++) {
       {
-        final GOutput rr = responseMap.get(Integer.valueOf(i));
+        final GOutput rr = map.get(Integer.valueOf(i));
         if ((!(rr != null))) {
-          throw new AssertionError();
+          throw new AssertionError(("No value for index " + Integer.valueOf(i)));
         }
         localResponses.add(rr);
       }
