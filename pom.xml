@@ -5,6 +5,7 @@
 	<groupId>org.javadelight</groupId>
 	<artifactId>delight-functional</artifactId>
 	<version>0.0.12</version>
+	
 	<description>Utilities for functional-style Java applications.</description>
 	<url>https://github.com/javadelight/delight-functional</url>
 	<properties>
