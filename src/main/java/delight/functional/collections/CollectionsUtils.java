@@ -24,7 +24,6 @@ public final class CollectionsUtils {
       {
         final GOutput rr = map.get(Integer.valueOf(i));
         if ((!(rr != null))) {
-          throw new AssertionError(("No value for index " + Integer.valueOf(i)));
         }
         localResponses.add(rr);
       }

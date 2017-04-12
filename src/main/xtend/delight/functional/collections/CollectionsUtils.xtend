@@ -22,7 +22,9 @@ final class CollectionsUtils {
 		for (var int i = 0; i < map.size(); i++) {
 			val GOutput rr = map.get(Integer.valueOf(i))
 			if (!(rr !== null)) {
-				throw new AssertionError("No value for index "+i)
+				
+				// assertion does not work since result might be null.
+				//throw new AssertionError("No value for index "+i+" in map "+map)
 			}
 			localResponses.add(rr)
 		}
