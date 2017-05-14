@@ -58,7 +58,7 @@ public abstract class SuccessFail {
         StringConcatenation _builder = new StringConcatenation();
         _builder.append("SucessFail.FAIL(");
         String _message = t.getMessage();
-        _builder.append(_message);
+        _builder.append(_message, "");
         _builder.append(")");
         return _builder.toString();
       }

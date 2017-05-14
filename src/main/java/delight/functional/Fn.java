@@ -39,7 +39,8 @@ public class Fn {
       public O apply(final I input) {
         Object res = input;
         for (final Function f : functions) {
-          res = f.apply(res);
+          Object _apply = f.apply(res);
+          res = _apply;
         }
         return ((O) res);
       }

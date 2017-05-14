@@ -22,7 +22,8 @@ public abstract class Maybe<V extends Object> {
     for (final Maybe<V> m : list) {
       boolean _is = m.is();
       if (_is) {
-        val.add(m.value());
+        V _value = m.value();
+        val.add(_value);
       }
     }
     return val;
