@@ -8,8 +8,7 @@ import java.util.Map;
 public final class CollectionsUtils {
   public static final <GPOutput extends Object> boolean isMapComplete(final Map<Integer, GPOutput> map, final int size) {
     for (int i = 0; (i < size); i++) {
-      Integer _valueOf = Integer.valueOf(i);
-      GPOutput _get = map.get(_valueOf);
+      GPOutput _get = map.get(Integer.valueOf(i));
       boolean _tripleEquals = (_get == null);
       if (_tripleEquals) {
         return false;
@@ -23,8 +22,7 @@ public final class CollectionsUtils {
     final List<GOutput> localResponses = new ArrayList<GOutput>(_size);
     for (int i = 0; (i < map.size()); i++) {
       {
-        Integer _valueOf = Integer.valueOf(i);
-        final GOutput rr = map.get(_valueOf);
+        final GOutput rr = map.get(Integer.valueOf(i));
         if ((!(rr != null))) {
         }
         localResponses.add(rr);
