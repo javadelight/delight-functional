@@ -9,7 +9,7 @@
 	<description>Utilities for functional-style Java applications.</description>
 	<url>https://github.com/javadelight/delight-functional</url>
 	<properties>
-		<module.gwtVersion>2.5.1</module.gwtVersion>
+		<module.gwtVersion>2.8.2</module.gwtVersion>
 		<module.importedPackages>
 			org.junit,
 			*
