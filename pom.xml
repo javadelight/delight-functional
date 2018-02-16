@@ -22,7 +22,9 @@
 
 	<!-- Dependent Modules -->
 	<dependencies>
-
+		
+		
+		
 		<dependency>
 			<groupId>org.eclipse.xtend</groupId>
 			<artifactId>org.eclipse.xtend.lib.gwt</artifactId>
